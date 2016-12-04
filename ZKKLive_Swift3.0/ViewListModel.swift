@@ -33,8 +33,6 @@ class ViewListModel: NSObject {
 		
 	}
 	
-
-	
 }
 
 class CreatorItem: NSObject {

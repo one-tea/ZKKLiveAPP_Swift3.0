@@ -31,13 +31,9 @@ class ZKKNetRequest: NSObject {
 				print("DataTask Error:\(error)")
 				return
 			}
-//			let res = reponseObject as! HTTPURLResponse
-//			let status = try? res.statusCode == 200
-//			print("DataTask Status:\(status)")
 			
 			callBack(data, error);
 
-			
 		}
 		
 		dataTask.resume()
@@ -64,7 +60,6 @@ class ZKKNetRequest: NSObject {
 			return
 			}
 			callBack(data,error)
-			
 		}
 		
 		dataTask.resume()
