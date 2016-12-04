@@ -4,8 +4,6 @@
 Swift3.0新特性：http://www.cocoachina.com/swift/20160712/17028.html
 - 使用网络请求简单封装
 ````
-class ZKKNetRequest: NSObject {
-
 	
 	public class func get(_ url: String!, _ para: NSDictionary?, callBack: @escaping(_ data:Data? ,_ error:Error?) -> Void) -> Void{
 		
@@ -78,10 +76,39 @@ class ZKKNetRequest: NSObject {
 		}
 		return String(paraString)
 	}
-}
 
 ````
+- 图片加载
+````
+	
+		/* 加载 */
+		
+		DispatchQueue.global().async { 
+			
+			let request = URLRequest(url: URL.init(string: urlString as String)!)
+			
+			URLSession.shared.dataTask(with: request) { (data, response, error) in
+				guard
+					let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
+					let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
+					let data = data, error == nil,
+					let image = UIImage(data: data)
+					else { return }
+				
+				self.contentMode = UIViewContentMode.scaleToFill
+				DispatchQueue.main.async(execute: {
+					self.image = image
+				})
+				}.resume()
 
+			
+		}
+		
+		
+		/* 缓存后续在添加，当然无法与SDImage性能相媲美，等待稳定版本合适的第三方框架再用吧 */
+		
+
+````
 - Cell特效 
 ````
 		cell.layer.transform = CATransform3DMakeScale(0.8, 0.8, 1)
