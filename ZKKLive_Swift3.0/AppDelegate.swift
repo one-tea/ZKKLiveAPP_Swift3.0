@@ -6,11 +6,6 @@
 //  Copyright © 2016年 Kevin. All rights reserved.
 //
 
-/* 
-**
-*  swift一直更新 第三方库请求库Alamfire容易出错没有使用，使用的封装了一个简单网络请求库ZKKNetRequest
-*  一个图片下载ImageView请求 ZKKNetImageUrl
-*/
 import UIKit
 
 @UIApplicationMain
