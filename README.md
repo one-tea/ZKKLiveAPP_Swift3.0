@@ -1,6 +1,6 @@
 # ZKKLiveAPP_Swift3.0
 #####项目变化简介:
-- 使用swift3开发 与之前的swfit2还有些简化 和一些变化具体参考
+- 使用swift3开发 与之前的swfit2相比有一些简化 具体参考
 Swift3.0新特性：http://www.cocoachina.com/swift/20160712/17028.html
 - 使用网络请求简单封装
 ````
