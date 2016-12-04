@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LiveViewController" customModule="ZKKLive_Swift3_0" customModuleProvider="target">
+            <connections>
+                <outlet property="backBtn" destination="rCn-0N-Mx4" id="0Qu-NO-PDD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCn-0N-Mx4">
+                    <rect key="frame" x="19" y="25" width="47" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="47" id="9Fc-rI-dOu"/>
+                        <constraint firstAttribute="height" constant="25" id="mUz-Bc-lFg"/>
+                    </constraints>
+                    <state key="normal" title="返回">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="backBtn:" destination="-1" eventType="touchUpInside" id="Got-wg-Vht"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.99473684210526314" green="0.98947368421052628" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="rCn-0N-Mx4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="19" id="Q3v-Zw-gt1"/>
+                <constraint firstItem="rCn-0N-Mx4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="25" id="j79-dM-dJr"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="92.5"/>
+        </view>
+    </objects>
+</document>
