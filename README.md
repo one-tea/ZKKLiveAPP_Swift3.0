@@ -117,6 +117,4 @@ Swift3.0新特性：http://www.cocoachina.com/swift/20160712/17028.html
 		}, completion: nil)
 
 ````
-
-** 功能详情 **
-###### 简书：https://www.jianshu.com/p/ed9eb96afa78
+详情简书：https://www.jianshu.com/p/ed9eb96afa78
