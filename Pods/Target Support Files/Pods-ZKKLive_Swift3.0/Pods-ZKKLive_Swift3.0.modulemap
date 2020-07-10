@@ -1,6 +1,0 @@
-framework module Pods_ZKKLive_Swift3_0 {
-  umbrella header "Pods-ZKKLive_Swift3.0-umbrella.h"
-
-  export *
-  module * { export * }
-}
